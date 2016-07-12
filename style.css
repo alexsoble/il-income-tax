@@ -1,0 +1,71 @@
+* {
+  font-family: 'Kadwa', sans-serif;
+  color: black;
+}
+
+body {
+  padding: 40px;
+  background-color: #f6f6f6;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.guzzardi {
+  font-size: 24px;
+}
+
+.tweet {
+  background-color: #dddddd;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.notes-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+.source {
+  text-align: center;
+}
+
+.who-is-talking {
+  font-size: 18px;
+  font-style: italic;
+  color: #333333;
+}
+
+.background-context {
+  font-size: 18px;
+}
+
+.medallion {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 240px;
+  text-align: center;
+  margin: auto auto;
+}
+
+.big-medallion {
+  width: 480px;
+  height: 480px;
+}
+
+.medallion-number {
+  background-color: transparent;
+  color: white;
+}
+
+.big-number {
+  font-size: 70px;
+  line-height: 240px;
+}
+
+.small-number {
+  line-height: 240px;
+  font-size: 35px;
+}
