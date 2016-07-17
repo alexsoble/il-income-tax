@@ -88,6 +88,10 @@ section {
   display: block;
 }
 
+#wisconsin-medallions {
+  margin: 20px 0;
+}
+
 .medallion-number {
   background-color: transparent;
   color: white;
