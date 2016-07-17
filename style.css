@@ -1,3 +1,5 @@
+/* OVERALL */
+
 * {
   font-family: 'Kadwa', sans-serif;
   color: black;
@@ -12,14 +14,17 @@ h1 {
   font-size: 40px;
 }
 
-.guzzardi {
-  font-size: 24px;
-}
-
-.tweet {
+section {
   background-color: #dddddd;
   padding: 40px;
   margin: 40px 0;
+}
+
+
+/* GUZZARDI TWEETS */
+
+.guzzardi {
+  font-size: 24px;
 }
 
 .notes-text {
@@ -68,4 +73,18 @@ h1 {
 .small-number {
   line-height: 240px;
   font-size: 35px;
+}
+
+/* CALL TO ACTION */
+
+.call-to-action {
+  text-align: center;
+}
+
+.call-to-action div {
+  font-size: 24px;
+}
+
+.call-to-action a {
+  font-size: 30px;
 }
