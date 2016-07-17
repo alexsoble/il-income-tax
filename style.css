@@ -32,6 +32,13 @@ section {
   text-align: center;
 }
 
+.paragraph-notes-text {
+  margin-top: 4px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+
 .source {
   text-align: center;
 }
