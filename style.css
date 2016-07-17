@@ -46,18 +46,46 @@ section {
   font-size: 18px;
 }
 
+
+
+/* INCOME TAX RATE MEDALLIONS */
+
 .medallion {
-  width: 240px;
-  height: 240px;
-  background-color: black;
+  background-color: #151560;
   border-radius: 240px;
   text-align: center;
-  margin: auto auto;
+  margin: 20px auto;
+  display: inline-block;
 }
 
-.big-medallion {
-  width: 480px;
-  height: 480px;
+.medallion375 {
+  width: 240px;
+  height: 240px;
+}
+
+.medallion400 {
+  width: 262px;
+  height: 262px;
+}
+
+.medallion584 {
+  width: 298px;
+  height: 298px;
+}
+
+.medallion627 {
+  width: 309px;
+  height: 309px;
+}
+
+.medallion765 {
+  width: 342px;
+  height: 342px;
+}
+
+#illinois-medallion {
+  text-align: center;
+  display: block;
 }
 
 .medallion-number {
