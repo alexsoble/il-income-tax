@@ -2,8 +2,12 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link href='https://fonts.googleapis.com/css?family=Prompt:400,700|Kadwa' rel='stylesheet' type='text/css'>
   <link href='style.css' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 <body>
+
   <h1>What I learned about IL taxes from Will Guzzardi.</h1>
 
   <div class="background-context">
@@ -100,18 +104,8 @@
     <div class="who-is-talking">Notes:</div>
 
     <div class="notes-text">
-      Here's a photo of the Dixie Square Penneys and Jewel from 2009.
-    </div>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dixie_Square_Penneys_and_Jewel.jpg" />
-
-
-    <div class="source">
-      Source:
-      <a href="https://commons.wikimedia.org/wiki/File:Dixie_Square_Penneys_and_Jewel.jpg">
-        Wikimedia
-      </a>
-    </div>
+      <div id="container"></div>
 
   </section>
 
@@ -158,3 +152,68 @@
   </section>
 
 </body>
+
+<script>
+
+$(function () {
+
+  $('#container').highcharts({
+    chart: {
+      type: 'column'
+    },
+    title: {
+      text: 'Median real estate property taxes paid for housing units with mortgages (2013)'
+    },
+    subtitle: {
+      text: 'Source: city-data.com'
+    },
+    xAxis: {
+      categories: [
+        'Chicago',
+        'Harvey',
+        'East St. Louis',
+      ],
+      title: {
+        text: null
+      }
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: 'Dollars'
+      },
+      labels: {
+        overflow: 'justify',
+        format: "${value}"
+      }
+    },
+    plotOptions: {
+      bar: {
+        dataLabels: {
+          enabled: false
+        }
+      },
+      series: {
+        allowPointSelect: false
+      }
+    },
+    legend: {},
+    tooltip: {
+      formatter: function() {
+        return '<b>Median property taxes:</b> $' + this.y;
+      }
+    },
+    credits: { enabled: false },
+    series: [
+      {
+        name: 'Median property taxes',
+        data: [
+          3645,
+          2379,
+          1134,
+        ]
+      }
+    ]
+  });
+});
+</script>
