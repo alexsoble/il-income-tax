@@ -22,6 +22,7 @@ section {
 header {
   padding: 40px;
   color: white;
+  margin-bottom: -40px;
 }
 
 a {
@@ -155,6 +156,7 @@ header a {
 
 .call-to-action {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .call-to-action div {
