@@ -43,6 +43,10 @@ section {
   text-align: center;
 }
 
+.source.left {
+  text-align: left;
+}
+
 .who-is-talking {
   font-size: 18px;
   font-style: italic;
