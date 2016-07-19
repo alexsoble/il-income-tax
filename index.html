@@ -129,7 +129,7 @@ mixpanel.init("7c94452e0a5c17106e2a7397bbf44cac");
     <div class="who-is-talking">Notes:</div>
 
     <div class="paragraph-notes-text">
-      Keeping people in jail is expensive. Take the case of Lamont Cathey, a Cook County jail inmate who has cost the county more than <a href="http://www.chicagotribune.com/news/ct-million-dollar-inmate-cook-jail-met-20150524-story.html">$1 million in health care costs alone</a>.
+      Keeping people in jail is expensive. Take the case of Lamont Cathey, a Cook County jail inmate who has cost the county more than <a href="http://www.chicagotribune.com/news/ct-million-dollar-inmate-cook-jail-met-20150524-story.html" id="trib-story">$1 million in health care costs alone</a>.
       Lamont was arrested for the theft of money from a pizzeria safe, jailed for not being able to post a $5,000 bond, and has been hospitalized two dozen times since his arrest.
     </div>
 
@@ -239,5 +239,6 @@ $(function () {
 });
 </script>
 <script type="text/javascript">
-  mixpanel.track_links("body a", "click link", { "referrer": document.referrer });
+  mixpanel.track_links("#call-to-action-link", "Click Call to Action link", { "referrer": document.referrer });
+  mixpanel.track_links("#trib-story", "Click Trib Story link", { "referrer": document.referrer });
 </script>
