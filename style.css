@@ -185,3 +185,10 @@ header a {
 }
 
 
+/* JAIL PHOTO */
+
+@media screen and (max-width: 800px) {
+  #cook-county-jail-image {
+    display: none;
+  }
+}
