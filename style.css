@@ -168,6 +168,61 @@ header a {
 }
 
 
+/* MEDIALLIONS -- THE RESPONSIVE PART */
+
+/* FYI these are a BIT misleading when shrunk since the */
+/* area of the circles decreases faster than the radius decreases */
+/* ... but if anything that is a NOBLE kind of misleading */
+/* because it understates the WI circles' areas and therefore */
+/* visually understates Will's argument, which I am sympathetic to. */
+
+/* Not doing sqrt because I don't believe calc() supports it */
+/* and I am too lazy to do anything else right now. */
+
+@media only screen and (max-width: 1320px) {
+  .medallion375 {
+    width: calc(0.8 * 240px);
+    height: calc(0.8 * 240px);
+  }
+  .medallion375 .number375 {
+    line-height: calc(0.8 * 240px);
+  }
+
+  .medallion400 {
+    width: calc(0.8 * 262px);
+    height: calc(0.8 * 262px);
+  }
+  .medallion400 .number400 {
+    line-height: calc(0.8 * 262px);
+  }
+
+  .medallion584 {
+    width: calc(0.8 * 298px);
+    height: calc(0.8 * 298px);
+  }
+  .medallion584 .number584 {
+    line-height: calc(0.8 * 298px);
+  }
+
+  .medallion627 {
+    width: calc(0.8 * 309px);
+    height: calc(0.8 * 309px);
+  }
+  .medallion627 .number627 {
+    line-height: calc(0.8 * 309px);
+  }
+
+  .medallion765 {
+    width: calc(0.8 * 342px);
+    height: calc(0.8 * 342px);
+  }
+  .medallion765 .number765 {
+    line-height: calc(0.8 * 342px);
+  }
+
+}
+
+
 /* CALL TO ACTION */
 
 .call-to-action {
