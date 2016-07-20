@@ -10,7 +10,15 @@ body {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 section {
