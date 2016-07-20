@@ -12,6 +12,7 @@ $(function () {
     },
     xAxis: {
       categories: [
+        'Winnetka, IL',
         'Chicago, IL',
         'Harvey, IL',
         'East St. Louis, IL',
@@ -52,6 +53,7 @@ $(function () {
         name: 'Median property taxes',
         color: '#E0CA3C',
         data: [
+          10647,
           3645,
           2379,
           1134,
